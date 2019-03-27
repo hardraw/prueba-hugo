@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "My New Hugo Site"
 theme= "airspace-hugo"
 
-menu]
+[menu]
 
   [[menu.header]]
     weight = 2
