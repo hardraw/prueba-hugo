@@ -1,7 +1,7 @@
 ---
 title: buenas
 date: 2019-03-27T22:28:54.727Z
-description: holas
+description: holas holas
 image: /images/uploads/slider-2.png
 ---
 # Titulo
