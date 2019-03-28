@@ -42,6 +42,8 @@
 
 <script src="/js/main.js"></script>
 
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
 
 
 </head>
@@ -111,9 +113,10 @@
 				<div class="col-md-6">
 					<article class="blog-post">
 						
-						<a class="post-title" href="/post/prueba/asdsad/">asdsad</a>
+						<img src="/images/uploads/slider-2.png" class="img-responsive" alt="post-thumb"> 
+						<a class="post-title" href="/post/prueba/asdsad/">Hola esto es una prueba de post</a>
 						<p>
-							asdasd
+							Esto es un título Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles. Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que no hay nada avergonzante escondido en el medio del texto. Todos los generadores de Lorem Ipsum que se encuentran en Internet tienden a repetir trozos predefinidos cuando sea necesario, haciendo a este el único generador verdadero (válido) en la Internet.
 						</p>
 						<a href="/post/prueba/asdsad/" class="btn btn-main">Read More</a>
 					</article>
@@ -152,6 +155,17 @@
     </div>
   </div>
 </footer>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 
 
 </body>

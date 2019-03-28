@@ -14,7 +14,7 @@
 
 
 
-<title>asdsad</title>
+<title>Hola esto es una prueba de post</title>
 
 <meta name="generator" content="Hugo 0.49.2" />
 
@@ -41,6 +41,8 @@
 
 
 <script src="/js/main.js"></script>
+
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
 
 
@@ -97,12 +99,16 @@
 	      <div class="row">
 	        <div>
 	          <div class="block">
-							
-	            <h1>asdsad</h1>
+							<img src="/images/uploads/slider-2.png" width="100%" alt="post-image"> 
+	            <h1>Hola esto es una prueba de post</h1>
 	            <div class="post-info-wrapper">
 	            </div>
 	            <hr />
-	            <p><p>asdasd</p>
+	            <p>
+
+<h1 id="esto-es-un-título">Esto es un título</h1>
+
+<p>Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles. Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que no hay nada avergonzante escondido en el medio del texto. Todos los generadores de Lorem Ipsum que se encuentran en Internet tienden a repetir trozos predefinidos cuando sea necesario, haciendo a este el único generador verdadero (válido) en la Internet. Usa un diccionario de mas de 200 palabras provenientes del latín, combinadas con estructuras muy útiles de sentencias, para generar texto de Lorem Ipsum que parezca razonable. Este Lorem Ipsum generado siempre estará libre de repeticiones, humor agregado o palabras no características del lenguaje, etc.</p>
 </p>
 	          </div>
 	        </div>
@@ -158,6 +164,17 @@
     </div>
   </div>
 </footer>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 
 </body>
 </html>

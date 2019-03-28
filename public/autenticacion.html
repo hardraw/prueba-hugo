@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>A static website</title>
+
+  <!-- include the widget -->
+  <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+  <!-- Add a menu:
+   Log in / Sign up - when the user is not logged in
+   Username / Log out - when the user is logged in
+  -->
+<form class="identity-form-confirm identity-hide" method="POST" action="/">
+  <h2>Confirm</h2>
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" required>
+  <input type="submit" value="Set up account">
+</form>
+</body>
+</html>

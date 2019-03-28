@@ -42,6 +42,8 @@
 
 <script src="/js/main.js"></script>
 
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
 
 
 </head>
@@ -108,6 +110,72 @@
 		<div class="container">
 			<div class="row">
 				
+				<div class="col-md-6">
+					<article class="blog-post">
+						
+						<a class="post-title" href="/tags/go/">Go</a>
+						<p>
+							
+						</p>
+						<a href="/tags/go/" class="btn btn-main">Read More</a>
+					</article>
+				</div>
+				
+				<div class="col-md-6">
+					<article class="blog-post">
+						
+						<a class="post-title" href="/tags/golang/">Golang</a>
+						<p>
+							
+						</p>
+						<a href="/tags/golang/" class="btn btn-main">Read More</a>
+					</article>
+				</div>
+				
+				<div class="col-md-6">
+					<article class="blog-post">
+						
+						<a class="post-title" href="/tags/hugo/">Hugo</a>
+						<p>
+							
+						</p>
+						<a href="/tags/hugo/" class="btn btn-main">Read More</a>
+					</article>
+				</div>
+				
+				<div class="col-md-6">
+					<article class="blog-post">
+						
+						<a class="post-title" href="/tags/ipsum/">Ipsum</a>
+						<p>
+							
+						</p>
+						<a href="/tags/ipsum/" class="btn btn-main">Read More</a>
+					</article>
+				</div>
+				
+				<div class="col-md-6">
+					<article class="blog-post">
+						
+						<a class="post-title" href="/tags/programming/">Programming</a>
+						<p>
+							
+						</p>
+						<a href="/tags/programming/" class="btn btn-main">Read More</a>
+					</article>
+				</div>
+				
+				<div class="col-md-6">
+					<article class="blog-post">
+						
+						<a class="post-title" href="/tags/theme/">Theme</a>
+						<p>
+							
+						</p>
+						<a href="/tags/theme/" class="btn btn-main">Read More</a>
+					</article>
+				</div>
+				
 			</div>
 			<div class="col-12 text-center">
 				
@@ -141,6 +209,17 @@
     </div>
   </div>
 </footer>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 
 
 </body>
