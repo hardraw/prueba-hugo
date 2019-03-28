@@ -12,8 +12,8 @@ collections:
     folder: "content/post/prueba" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Intro Blurb", name: "description", widget: "text"}
-      - {label: "Image", name: "image", widget: "image", required: false}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Titulo de post", name: "title", widget: "string"}
+      - {label: "Publicar fecha", name: "date", widget: "datetime"}
+      - {label: "Resumen", name: "description", widget: "text"}
+      - {label: "Imagen", name: "image", widget: "image", required: false}
+      - {label: "Contenido", name: "body", widget: "markdown"}
